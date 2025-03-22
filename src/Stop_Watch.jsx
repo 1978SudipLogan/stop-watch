@@ -56,6 +56,7 @@ function StopWatch() {
                     marginBottom: "10px",
                     color: theme ? "black" : "white",
                 }}
+                className="font-bold"
             >
                 Stop Watch
             </h1>
@@ -137,9 +138,10 @@ function StopWatch() {
                     }}
                     onClick={() => setTheme((prevTheme) => !prevTheme)}
                 >
-                    {theme?"Light":"Dark"}
+                    {theme?"Dark":"Light"}
                 </button>
             </div>
+           
         </div>
     );
 }
